@@ -618,7 +618,6 @@ body {
   transition-property: transform;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function);
-  color: rgba(244, 244, 253, 1);
   padding-top: 40px;
   padding-left: 32px;
   padding-right: 32px;
