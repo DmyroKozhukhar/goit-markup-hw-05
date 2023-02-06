@@ -213,11 +213,12 @@ body {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../img/hero-bg.jpg);
+  url(../img/hero-bg.jpg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
   max-width: 1440px;
+  max-height: 600px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -406,6 +407,7 @@ body {
   transition-property: box-shadow;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function);
+  border-radius: 4px;
 }
 
 .buttons-list > .list-item:hover {
