@@ -24,6 +24,14 @@
   --modal-background-color: #fcfcfc;
   --modal-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  --modal-wight: 408px;
+  --modal-height: 576px;
+  --modal-btn-bgc: #e7e9fc;
+  --soc-link-footer-hover-focus: rgba(49, 208, 170, 1);
+  --overlay-portfolio-text-color: rgba(244, 244, 253, 1);
+  --social-link-footer-bgc: rgba(255, 255, 255, 0.1);
+  --customers-links-border: rgba(142, 143, 153, 1);
+  --customers-links-fill: rgba(142, 143, 153, 1);
 }
 /* GENERAL */
 .visually-hidden {
@@ -213,7 +221,7 @@ body {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-  url(../img/hero-bg.jpg);
+    url(../img/hero-bg.jpg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -499,9 +507,9 @@ body {
   height: 88px;
   justify-content: center;
   align-items: center;
-  border: 1px solid rgba(142, 143, 153, 1);
+  border: 1px solid var(--customers-links-border);
   border-radius: 4px;
-  fill: rgba(142, 143, 153, 1);
+  fill: var(--customers-links-fill);
   transition-property: border, fill;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function);
@@ -545,7 +553,7 @@ body {
   margin-left: 120px;
 }
 .sotial-link.footer {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--social-link-footer-bgc);
   transition-property: background-color;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function);
@@ -558,7 +566,7 @@ body {
 }
 .sotial-link.footer:hover,
 .sotial-link.footer:focus {
-  background-color: rgba(49, 208, 170, 1);
+  background-color: var(--soc-link-footer-hover-focus);
 }
 
 /* Modal-window */
@@ -576,8 +584,8 @@ body {
 .modal {
   background-color: var(--modal-background-color);
   box-shadow: var(--modal-box-shadow);
-  width: 408px;
-  height: 576px;
+  width: var(--modal-wight);
+  height: var(--modal-height);
   border-radius: 4px;
   position: absolute;
   top: 50%;
@@ -598,7 +606,7 @@ body {
   right: 24px;
   padding: 0;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  background-color: #e7e9fc;
+  background-color: var(--modal-btn-bgc);
 }
 .close-icon {
   fill: rgba(0, 0, 0, 1);
@@ -630,7 +638,7 @@ body {
   padding-right: 32px;
 }
 .overlay-portfolio > p {
-  color: rgba(244, 244, 253, 1);
+  color: var(--overlay-portfolio-text-color);
   line-height: 1.5;
 }
 .card-items {
