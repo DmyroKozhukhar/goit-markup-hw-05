@@ -105,8 +105,7 @@ body {
 .navi-link,
 .contmail,
 .contnumb,
-.logo-link,
-.logo-link-footer {
+.logo-link {
   text-decoration: none;
   display: block;
   padding-top: 24px;
@@ -542,6 +541,7 @@ body {
   padding-top: 0;
   margin-bottom: 16px;
   display: block;
+  text-decoration: none;
 }
 .footer-link-header {
   color: #fff;
